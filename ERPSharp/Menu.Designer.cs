@@ -47,7 +47,9 @@
             Controls.Add(menuTree);
             IsMdiContainer = true;
             Name = "Menu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu";
+            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
         }
 
