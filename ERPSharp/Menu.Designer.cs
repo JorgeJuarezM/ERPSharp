@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            menuTree = new TreeView();
+            SuspendLayout();
+            // 
+            // menuTree
+            // 
+            menuTree.Dock = DockStyle.Left;
+            menuTree.Location = new Point(0, 0);
+            menuTree.Name = "menuTree";
+            menuTree.Size = new Size(250, 450);
+            menuTree.TabIndex = 1;
+            // 
+            // Menu
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(menuTree);
+            IsMdiContainer = true;
+            Name = "Menu";
             Text = "Menu";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private TreeView menuTree;
     }
 }
