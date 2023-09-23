@@ -17,7 +17,7 @@ namespace ERPSharp
         static void StartApp()
         {
             LoginForm loginForm = new LoginForm();
-            DialogResult loginResult =  loginForm.ShowDialog();
+            DialogResult loginResult = loginForm.ShowDialog();
             if (loginResult == DialogResult.OK)
             {
                 Application.Run(new Menu());
