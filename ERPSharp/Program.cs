@@ -11,7 +11,17 @@ namespace ERPSharp
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Menu());
+            StartApp();
+        }
+
+        static void StartApp()
+        {
+            LoginForm loginForm = new LoginForm();
+            DialogResult loginResult = loginForm.ShowDialog();
+            if (loginResult == DialogResult.OK)
+            {
+                Application.Run(new Menu());
+            }
         }
     }
 }
